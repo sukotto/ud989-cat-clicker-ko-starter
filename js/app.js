@@ -13,6 +13,7 @@ var ViewModel = function() {
     }
     else if(this.clickCount() >= 10 && 
      this.clickCount() < 100) {
+      return "Infant";
     }
     else if(this.clickCount() >= 100){
       return "Teen";
@@ -20,3 +21,4 @@ var ViewModel = function() {
   },this);
 }
 
+ko.applyBindings(new ViewModel());
